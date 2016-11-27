@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="Assignment1.Web.Site2" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+<style type="text/css">
+    .menu ul
+    {
+        border-bottom: 1px solid orange;
+    }
+ 
+    .menu ul li
+    {
+        border: 1px solid Yellow;
+        background-color: blueviolet;
+        text-decoration: none;
+        padding: 3px;
+        margin: 3px;
+        width:200px;
+        vertical-align:middle;
+    }
+ 
+    .menu ul li a
+    {
+        color: white;
+    }
+ 
+    .menu ul li a:hover
+    {
+        font-weight:bold;
+    }
+    .auto-style1 {
+        width: 1193px;
+    }
+    #form1 {
+        height: 359px;
+        width: 1300px;
+    }
+    .menu {
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    
+     <form id="form1" runat="server">
+        
+        <img src="Banner.jpg" style="fit:fill;width:1100px;height:300px"/>
+                  <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" CssClass="menu" >
+    <Items>
+        <asp:MenuItem Text="Home" NavigateUrl="http://localhost:14710/WebForm1.aspx" />
+        <asp:MenuItem Text="Reservation" NavigateUrl="http://localhost:14710/Reservation.aspx" />
+         <asp:MenuItem Text="Schedule" NavigateUrl="http://localhost:55501/Bussite.aspx" />
+        <asp:MenuItem Text="Maintenance" NavigateUrl="http://localhost:14710/Maintenance.aspx" />
+        <asp:MenuItem Text="Make Payment" NavigateUrl="http://localhost:14710/Assignment1TestPage.aspx" />
+        
+        <asp:MenuItem Text="About Us" NavigateUrl="http://localhost:14710/About.aspx" />
+        
+    </Items>
+</asp:Menu>
+            
+   
+        <table style="width: 100%; height: 224px;">
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+
+                    </asp:ContentPlaceHolder>
+           
+
+
+                </td>
+                <td style="position:absolute;top:0;right:400px;">
+                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+                    </asp:ContentPlaceHolder>
+
+                </td>
+            </tr>
+            </table>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+    </form>
+</body>
+</html>

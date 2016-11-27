@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetLatestCustomers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="destinationLocation" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLatestCustomersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLatestCustomersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLatestDriver">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="driverID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLatestDriverResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLatestDriverResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetLatestCustomersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLatestCustomers" />
+  </wsdl:message>
+  <wsdl:message name="GetLatestCustomersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLatestCustomersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLatestDriverSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLatestDriver" />
+  </wsdl:message>
+  <wsdl:message name="GetLatestDriverSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLatestDriverResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Report1Soap">
+    <wsdl:operation name="GetLatestCustomers">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Schedule from Schedule table</wsdl:documentation>
+      <wsdl:input message="tns:GetLatestCustomersSoapIn" />
+      <wsdl:output message="tns:GetLatestCustomersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestDriver">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Schedule from Schedule table</wsdl:documentation>
+      <wsdl:input message="tns:GetLatestDriverSoapIn" />
+      <wsdl:output message="tns:GetLatestDriverSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Report1Soap" type="tns:Report1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetLatestCustomers">
+      <soap:operation soapAction="http://tempuri.org/GetLatestCustomers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestDriver">
+      <soap:operation soapAction="http://tempuri.org/GetLatestDriver" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Report1Soap12" type="tns:Report1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetLatestCustomers">
+      <soap12:operation soapAction="http://tempuri.org/GetLatestCustomers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestDriver">
+      <soap12:operation soapAction="http://tempuri.org/GetLatestDriver" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Report1">
+    <wsdl:port name="Report1Soap" binding="tns:Report1Soap">
+      <soap:address location="http://localhost:55501/Report.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Report1Soap12" binding="tns:Report1Soap12">
+      <soap12:address location="http://localhost:55501/Report.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,15 @@
+c:\users\user\documents\visual studio 2012\Projects\BTS\BTS\bin\BTS.dll
+c:\users\user\documents\visual studio 2012\Projects\BTS\BTS\bin\BTS.pdb
+c:\users\user\documents\visual studio 2012\Projects\BTS\BTS\obj\Debug\BTS.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2012\Projects\BTS\BTS\obj\Debug\BTS.dll
+c:\users\user\documents\visual studio 2012\Projects\BTS\BTS\obj\Debug\BTS.pdb
+C:\Users\Siang93\Desktop\BTS\BTS\bin\BTS.dll
+C:\Users\Siang93\Desktop\BTS\BTS\bin\BTS.pdb
+C:\Users\Siang93\Desktop\BTS\BTS\obj\Debug\BTS.csprojResolveAssemblyReference.cache
+C:\Users\Siang93\Desktop\BTS\BTS\obj\Debug\BTS.dll
+C:\Users\Siang93\Desktop\BTS\BTS\obj\Debug\BTS.pdb
+C:\BTS\BTS\BTS\bin\BTS.dll
+C:\BTS\BTS\BTS\bin\BTS.pdb
+C:\BTS\BTS\BTS\obj\Debug\BTS.csprojResolveAssemblyReference.cache
+C:\BTS\BTS\BTS\obj\Debug\BTS.dll
+C:\BTS\BTS\BTS\obj\Debug\BTS.pdb

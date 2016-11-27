@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    
+  <siteMapNode url="WebForm1.aspx" title="Home"  description="">
+      
+    <siteMapNode url="" title="Staff"  description="">
+        <siteMapNode url="/SalesPages.aspx" title="Purchase"  description="Ticket Purchase" />
+        <siteMapNode url="" title="Reservation"  description="" />
+
+    </siteMapNode>
+        <siteMapNode url="" title="Admin Only"  description="" >
+    <siteMapNode url="" title="Schedule"  description="http://localhost:55501/BusForm.aspx" />
+    <siteMapNode url="" title="Maintenance"  description="" />
+          <siteMapNode url="" title="Payment"  description="" />
+    
+        </siteMapNode>
+    </siteMapNode>
+    
+</siteMap>

@@ -1,0 +1,15 @@
+C:\BTS\BTS\BTS\bin\BusReservation.dll
+C:\BTS\BTS\BTS\bin\BusReservation.pdb
+C:\BTS\BTS\BTS\obj\Debug\BusReservation.dll
+C:\BTS\BTS\BTS\obj\Debug\BusReservation.pdb
+C:\BTS\BTS\BTS\obj\Debug\BusReservation.csprojResolveAssemblyReference.cache
+C:\KhorCHINSIANG\BTS\BTS\bin\BusReservation.dll
+C:\KhorCHINSIANG\BTS\BTS\bin\BusReservation.pdb
+C:\KhorCHINSIANG\BTS\BTS\obj\Debug\BusReservation.csprojResolveAssemblyReference.cache
+C:\KhorCHINSIANG\BTS\BTS\obj\Debug\BusReservation.dll
+C:\KhorCHINSIANG\BTS\BTS\obj\Debug\BusReservation.pdb
+C:\KhorCHINSIANG\CompleteReserve\BTS\bin\BusReservation.dll
+C:\KhorCHINSIANG\CompleteReserve\BTS\bin\BusReservation.pdb
+C:\KhorCHINSIANG\CompleteReserve\BTS\obj\Debug\BusReservation.csprojResolveAssemblyReference.cache
+C:\KhorCHINSIANG\CompleteReserve\BTS\obj\Debug\BusReservation.dll
+C:\KhorCHINSIANG\CompleteReserve\BTS\obj\Debug\BusReservation.pdb

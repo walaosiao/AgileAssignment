@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="updateRecord">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="scheduleid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateRecordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="updateRecordResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLatestCustomers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="scheduleid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLatestCustomersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLatestCustomersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertLatestSchedule">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="scheduleID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="destination" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="departDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="departTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="busID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="driverID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="originLocation" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertLatestScheduleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertLatestScheduleResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteRecord">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="scheduleid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteRecordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="deleteRecordResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="updateRecordSoapIn">
+    <wsdl:part name="parameters" element="tns:updateRecord" />
+  </wsdl:message>
+  <wsdl:message name="updateRecordSoapOut">
+    <wsdl:part name="parameters" element="tns:updateRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLatestCustomersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLatestCustomers" />
+  </wsdl:message>
+  <wsdl:message name="GetLatestCustomersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLatestCustomersResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertLatestScheduleSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertLatestSchedule" />
+  </wsdl:message>
+  <wsdl:message name="InsertLatestScheduleSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertLatestScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteRecordSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteRecord" />
+  </wsdl:message>
+  <wsdl:message name="deleteRecordSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteRecordResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ScheduleSoap">
+    <wsdl:operation name="updateRecord">
+      <wsdl:input message="tns:updateRecordSoapIn" />
+      <wsdl:output message="tns:updateRecordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestCustomers">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Schedule from Schedule table</wsdl:documentation>
+      <wsdl:input message="tns:GetLatestCustomersSoapIn" />
+      <wsdl:output message="tns:GetLatestCustomersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertLatestSchedule">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Insert schedule into schedule table</wsdl:documentation>
+      <wsdl:input message="tns:InsertLatestScheduleSoapIn" />
+      <wsdl:output message="tns:InsertLatestScheduleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteRecord">
+      <wsdl:input message="tns:deleteRecordSoapIn" />
+      <wsdl:output message="tns:deleteRecordSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ScheduleSoap" type="tns:ScheduleSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="updateRecord">
+      <soap:operation soapAction="http://tempuri.org/updateRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestCustomers">
+      <soap:operation soapAction="http://tempuri.org/GetLatestCustomers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLatestSchedule">
+      <soap:operation soapAction="http://tempuri.org/InsertLatestSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteRecord">
+      <soap:operation soapAction="http://tempuri.org/deleteRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ScheduleSoap12" type="tns:ScheduleSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="updateRecord">
+      <soap12:operation soapAction="http://tempuri.org/updateRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestCustomers">
+      <soap12:operation soapAction="http://tempuri.org/GetLatestCustomers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLatestSchedule">
+      <soap12:operation soapAction="http://tempuri.org/InsertLatestSchedule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteRecord">
+      <soap12:operation soapAction="http://tempuri.org/deleteRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Schedule">
+    <wsdl:port name="ScheduleSoap" binding="tns:ScheduleSoap">
+      <soap:address location="http://localhost:55501/Schedule/Schedule.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ScheduleSoap12" binding="tns:ScheduleSoap12">
+      <soap12:address location="http://localhost:55501/Schedule/Schedule.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

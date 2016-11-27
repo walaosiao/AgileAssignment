@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BusTicketing" Class="DataClasses2DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\BusTicketing.mdf;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BusTicketingConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Reservation" Member="Reservations">
+    <Type Name="Reservation">
+      <Column Name="ReservationID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ReservationDate" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ReservationTime" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ReservationFrom" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ReservationTo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ReservationSeatNumber" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ReservationTotalSeat" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReservationTotalFare" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="ReservationBusNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ReservationName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ReservationPhoneNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ReservationIC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Payment" Member="Payments">
+    <Type Name="Payment">
+      <Column Name="ReservationID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ReservationDate" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ReservationTime" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ReservationFrom" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ReservationTo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ReservationSeatNumber" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ReservationTotalSeat" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReservationTotalFare" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="ReservationBusNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ReservationName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ReservationPhoneNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ReservationIC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PaymentAmount" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
