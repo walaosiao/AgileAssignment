@@ -17,3 +17,12 @@ C:\Users\User\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Fakes\w
 C:\Users\User\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Fakes\wa\o\f.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Fakes\wa\o\WebAssignment.Fakes.dll
 C:\Users\User\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Fakes\wa\o\WebAssignment.Fakes.pdb
+C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Fakes\wa\b\WebAssignment.Fakes.xml
+C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Fakes\wa\b\WebAssignment.Fakes.dll
+C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Fakes\wa\b\WebAssignment.Fakes.pdb
+C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Fakes\wa\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Fakes\wa\b\WebAssignment.dll
+C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Fakes\wa\b\WebAssignment.pdb
+C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Fakes\wa\o\f.csprojResolveAssemblyReference.cache
+C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Fakes\wa\o\WebAssignment.Fakes.dll
+C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Fakes\wa\o\WebAssignment.Fakes.pdb

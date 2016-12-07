@@ -1,8 +1,8 @@
-C:\Users\User\Documents\GitHub\AgileAssignment\Assignment1.Web\Fakes\WebAssignment.fakes : warning : Cannot generate shim for WebAssignment.BusReference.BusServiceSoap: type is an interface.
-C:\Users\User\Documents\GitHub\AgileAssignment\Assignment1.Web\Fakes\WebAssignment.fakes : warning : Cannot generate shim for WebAssignment.BusReference.BusServiceSoapChannel: type is an interface.
-C:\Users\User\Documents\GitHub\AgileAssignment\Assignment1.Web\Fakes\WebAssignment.fakes : warning : Cannot generate shim for WebAssignment.DriverFunction.DriverSoap: type is an interface.
-C:\Users\User\Documents\GitHub\AgileAssignment\Assignment1.Web\Fakes\WebAssignment.fakes : warning : Cannot generate shim for WebAssignment.DriverFunction.DriverSoapChannel: type is an interface.
-C:\Users\User\Documents\GitHub\AgileAssignment\Assignment1.Web\Fakes\WebAssignment.fakes : warning : Cannot generate shim for WebAssignment.ReportReference.Report1Soap: type is an interface.
-C:\Users\User\Documents\GitHub\AgileAssignment\Assignment1.Web\Fakes\WebAssignment.fakes : warning : Cannot generate shim for WebAssignment.ReportReference.Report1SoapChannel: type is an interface.
-C:\Users\User\Documents\GitHub\AgileAssignment\Assignment1.Web\Fakes\WebAssignment.fakes : warning : Cannot generate shim for WebAssignment.ScheduleReference.ScheduleSoap: type is an interface.
-C:\Users\User\Documents\GitHub\AgileAssignment\Assignment1.Web\Fakes\WebAssignment.fakes : warning : Cannot generate shim for WebAssignment.ScheduleReference.ScheduleSoapChannel: type is an interface.
+C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\Fakes\WebAssignment.fakes : warning : Cannot generate shim for WebAssignment.BusReference.BusServiceSoap: type is an interface.
+C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\Fakes\WebAssignment.fakes : warning : Cannot generate shim for WebAssignment.BusReference.BusServiceSoapChannel: type is an interface.
+C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\Fakes\WebAssignment.fakes : warning : Cannot generate shim for WebAssignment.DriverFunction.DriverSoap: type is an interface.
+C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\Fakes\WebAssignment.fakes : warning : Cannot generate shim for WebAssignment.DriverFunction.DriverSoapChannel: type is an interface.
+C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\Fakes\WebAssignment.fakes : warning : Cannot generate shim for WebAssignment.ReportReference.Report1Soap: type is an interface.
+C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\Fakes\WebAssignment.fakes : warning : Cannot generate shim for WebAssignment.ReportReference.Report1SoapChannel: type is an interface.
+C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\Fakes\WebAssignment.fakes : warning : Cannot generate shim for WebAssignment.ScheduleReference.ScheduleSoap: type is an interface.
+C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\Fakes\WebAssignment.fakes : warning : Cannot generate shim for WebAssignment.ScheduleReference.ScheduleSoapChannel: type is an interface.
