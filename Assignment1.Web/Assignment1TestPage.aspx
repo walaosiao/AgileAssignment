@@ -1,7 +1,4 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site2.Master" %>
-
-
-    
    
     <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" runat="server" >
         <script type="text/javascript" src="Silverlight.js"></script>
@@ -43,7 +40,7 @@
     </script>
 
 <body>
-    <form id="form1" style="height:100%;flex-align:center" >
+    <form id="form1" style="height:100%;text-align:center" >
     <div id="silverlightControlHost">
         <object data="data:application/x-silverlight-2," type="application/x-silverlight-2" width="100%" height="700px">
 		  <param name="source" value="ClientBin/Assignment1.xap"/>
