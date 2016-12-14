@@ -87,6 +87,7 @@
     <Content Include="EditCustomer.aspx" />
     <Content Include="EditStaff.aspx" />
     <Content Include="Maintenance.aspx" />
+    <Content Include="MakePayment.aspx" />
     <Content Include="PaymentReceipt.aspx" />
     <Content Include="print.aspx" />
     <Content Include="Reservation.aspx" />
@@ -175,6 +176,13 @@
     </Compile>
     <Compile Include="Maintenance.aspx.designer.cs">
       <DependentUpon>Maintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MakePayment.aspx.cs">
+      <DependentUpon>MakePayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MakePayment.aspx.designer.cs">
+      <DependentUpon>MakePayment.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaymentReceipt.aspx.cs">
       <DependentUpon>PaymentReceipt.aspx</DependentUpon>
