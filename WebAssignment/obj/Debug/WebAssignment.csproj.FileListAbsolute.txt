@@ -25,3 +25,4 @@ C:\Users\Chun\Documents\GitHub\AgileAssignment\WebAssignment\bin\WebAssignment.p
 C:\Users\Chun\Documents\GitHub\AgileAssignment\WebAssignment\obj\Debug\WebAssignment.csprojResolveAssemblyReference.cache
 C:\Users\Chun\Documents\GitHub\AgileAssignment\WebAssignment\obj\Debug\WebAssignment.dll
 C:\Users\Chun\Documents\GitHub\AgileAssignment\WebAssignment\obj\Debug\WebAssignment.pdb
+C:\Users\Chun\Documents\GitHub\AgileAssignment\WebAssignment\bin\WebAssignment.dll.config
