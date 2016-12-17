@@ -37,7 +37,7 @@ namespace Assignment1.Web
                 double genID = double.Parse(lastValue.Replace("MR", "")); genID = genID + 1; return ("MR" + genID.ToString());
             }
         }
-        // allow customer add new route
+
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["BusTicketingConnectionString"].ConnectionString);
