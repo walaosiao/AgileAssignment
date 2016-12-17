@@ -3,6 +3,7 @@
     <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" runat="server" >
         <script type="text/javascript" src="Silverlight.js"></script>
     <script type="text/javascript">
+
         function onSilverlightError(sender, args) {
             var appSource = "";
             if (sender != null && sender != 0) {
