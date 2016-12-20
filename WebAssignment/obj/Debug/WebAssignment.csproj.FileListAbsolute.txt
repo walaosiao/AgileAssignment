@@ -26,3 +26,8 @@ C:\Users\Chun\Documents\GitHub\AgileAssignment\WebAssignment\obj\Debug\WebAssign
 C:\Users\Chun\Documents\GitHub\AgileAssignment\WebAssignment\obj\Debug\WebAssignment.dll
 C:\Users\Chun\Documents\GitHub\AgileAssignment\WebAssignment\obj\Debug\WebAssignment.pdb
 C:\Users\Chun\Documents\GitHub\AgileAssignment\WebAssignment\bin\WebAssignment.dll.config
+C:\Users\TCYEE-PC\Documents\GitHub\AgileAssignment\WebAssignment\bin\WebAssignment.dll
+C:\Users\TCYEE-PC\Documents\GitHub\AgileAssignment\WebAssignment\bin\WebAssignment.pdb
+C:\Users\TCYEE-PC\Documents\GitHub\AgileAssignment\WebAssignment\obj\Debug\WebAssignment.csprojResolveAssemblyReference.cache
+C:\Users\TCYEE-PC\Documents\GitHub\AgileAssignment\WebAssignment\obj\Debug\WebAssignment.dll
+C:\Users\TCYEE-PC\Documents\GitHub\AgileAssignment\WebAssignment\obj\Debug\WebAssignment.pdb
