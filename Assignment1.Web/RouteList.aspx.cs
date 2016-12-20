@@ -43,38 +43,8 @@ namespace Assignment1.Web
             }
         }
 
-        [System.Web.Script.Services.ScriptMethod()]
-        [System.Web.Services.WebMethod]
-        public static List<string> SearchRoute(string prefixText, int count)
-        {
-            using (SqlConnection conn = new SqlConnection())
-            {
-                conn.ConnectionString = ConfigurationManager
-                        .ConnectionStrings["BusTicketingConnectionString"].ConnectionString;
-                using (SqlCommand cmd = new SqlCommand())
-                {
-                    cmd.CommandText = "Select RouteName From route where " +
-                    "RouteName like @SearchTest + '%'";
-                    cmd.Parameters.AddWithValue("@SearchText", prefixText);
-                    cmd.Connection = conn;
-                    conn.Open();
-                    List<string> route = new List<string>();
-                    using (SqlDataReader sdr = cmd.ExecuteReader())
-                    {
-                        while (sdr.Read())
-                        {
-                            route.Add(sdr["RouteName"].ToString());
-                        }
-                    }
-                    conn.Close();
-                    return route;
-                }
-            }
+       
         }
 
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
-}
