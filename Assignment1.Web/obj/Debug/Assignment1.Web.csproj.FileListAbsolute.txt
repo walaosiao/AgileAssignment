@@ -125,7 +125,6 @@ C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Assignm
 C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\bin\Assignment1.Web.dll.config
 C:\Users\TCYEE-PC\Documents\GitHub\AgileAssignment\Assignment1.Web\bin\Assignment1.Web.dll
 C:\Users\TCYEE-PC\Documents\GitHub\AgileAssignment\Assignment1.Web\bin\Assignment1.Web.pdb
-C:\Users\TCYEE-PC\Documents\GitHub\AgileAssignment\Assignment1.Web\bin\WebAssignment.Fakes.fakesconfig
 C:\Users\TCYEE-PC\Documents\GitHub\AgileAssignment\Assignment1.Web\bin\Microsoft.QualityTools.Testing.Fakes.dll
 C:\Users\TCYEE-PC\Documents\GitHub\AgileAssignment\Assignment1.Web\bin\WebAssignment.dll
 C:\Users\TCYEE-PC\Documents\GitHub\AgileAssignment\Assignment1.Web\bin\WebAssignment.pdb

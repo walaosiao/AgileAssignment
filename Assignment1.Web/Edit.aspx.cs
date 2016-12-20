@@ -12,11 +12,10 @@ namespace Assignment1.Web
     public partial class Edit : System.Web.UI.Page
     {
 
-
         string connStr = ConfigurationManager.ConnectionStrings["BusTicketingConnectionString"].ConnectionString;
         SqlCommand com;
         string str;
-
+        // Allow admin search the route record
         protected void btnCheck_Click(object sender, EventArgs e)
         {
             /*open connection to database*/
@@ -37,18 +36,12 @@ namespace Assignment1.Web
                 
 
             }
-            else
-            {
-                lblmsg.Text = "No record for this Bus.";
-                txtDepart.Text = "";
-                txtDest.Text = "";
-                txtFare.Text = "";
-
-            }
+            
 
             con.Close();
         }
 
+        // Allow admin update the route detail
         protected void btnEdit_Click(object sender, EventArgs e)
         {
             SqlConnection conCust;
@@ -70,41 +63,10 @@ namespace Assignment1.Web
             cmdUpdate.Parameters.AddWithValue("@BusFare", txtFare.Text);
              cmdUpdate.ExecuteNonQuery();
 
-             lblmsg.Text = "Route details is updated";
-             txtDepart.Text = "";
-             txtDest.Text = "";
-             txtFare.Text = "";
             conCust.Close();
         }
 
-        protected void btnDelete_Click(object sender, EventArgs e)
-        {
-            SqlConnection conCust;
-            string strDelete;
-            SqlCommand cmdDelete;
-
-            /*open connection to database*/
-            string connStr = ConfigurationManager.ConnectionStrings["BusTicketingConnectionString"].ConnectionString;
-            conCust = new SqlConnection(connStr);
-
-            conCust.Open();
-
-            strDelete = "Delete route where RouteID=@RouteID";
-            cmdDelete = new SqlCommand(strDelete, conCust);
-
-            cmdDelete.Parameters.AddWithValue("@RouteID",(txtID.Text));
-            cmdDelete.ExecuteNonQuery();
-            txtDepart.Text = "";
-            txtDest.Text = "";
-            txtFare.Text = "";
-
-            conCust.Close();
-
-           
-                lblmsg.Text = "Record for this route is deleted";
-   
-            conCust.Close();
-        }
+        
 
         protected void txtFare_TextChanged(object sender, EventArgs e)
         {
