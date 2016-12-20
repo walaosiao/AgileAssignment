@@ -12,6 +12,7 @@ namespace Assignment1.Web
 {
     public partial class addroute : System.Web.UI.Page
     {
+        //AUTO GENERATE ID
         protected void Page_Load(object sender, EventArgs e)
         {
             Label2.Text = generateID();
@@ -37,7 +38,7 @@ namespace Assignment1.Web
                 double genID = double.Parse(lastValue.Replace("MR", "")); genID = genID + 1; return ("MR" + genID.ToString());
             }
         }
-
+        // Allow admin add route
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["BusTicketingConnectionString"].ConnectionString);
@@ -46,17 +47,7 @@ namespace Assignment1.Web
             SqlCommand cmd = new SqlCommand("SELECT RouteName FROM route WHERE RouteName=@RouteName", conn);
             cmd.Parameters.AddWithValue("@RouteName", name);
             SqlDataReader reader = cmd.ExecuteReader();
-            if (reader != null && reader.HasRows)
-            {
-                //if username is matching 
-                Label1.Text = " Route Exists!Enter another ";
-                txtDepart.Text = "";
-                txtDest.Text = "";
-                txtFare.Text = "";
-                conn.Close();
-            }
-            else
-            {
+            
                 string strInsert;
                 SqlCommand cmdInsert;
                 SqlConnection conCust;
@@ -79,16 +70,8 @@ namespace Assignment1.Web
          
             }
 
-            System.Threading.Thread.Sleep(3000);
-        }
-
-        protected void btnReset_Click(object sender, EventArgs e)
-        {
-            txtDepart.Text = "";
-            txtDest.Text = "";
-            txtFare.Text = "";
-        }
-
+       
+     
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
