@@ -19,14 +19,14 @@ namespace Assignment1.Web
         }
         private String generateID()
         {
-            string strSelect; 
+            string strSelect;
             SqlCommand cmdSelect;
             SqlDataReader dtr;
             SqlConnection conCust;
-            string connStr = ConfigurationManager.ConnectionStrings["BusTicketingConnectionString"].ConnectionString; 
+            string connStr = ConfigurationManager.ConnectionStrings["BusTicketingConnectionString"].ConnectionString;
             conCust = new SqlConnection(connStr); strSelect = "Select RouteID From dbo.route";
             cmdSelect = new SqlCommand(strSelect, conCust);
-            conCust.Open(); 
+            conCust.Open();
             dtr = cmdSelect.ExecuteReader();
             string lastValue = "";
             while (dtr.Read()) lastValue = dtr["RouteID"].ToString(); if (lastValue == "")
@@ -47,7 +47,17 @@ namespace Assignment1.Web
             SqlCommand cmd = new SqlCommand("SELECT RouteName FROM route WHERE RouteName=@RouteName", conn);
             cmd.Parameters.AddWithValue("@RouteName", name);
             SqlDataReader reader = cmd.ExecuteReader();
-            
+            if (reader != null && reader.HasRows)
+            {
+                //if username is matching 
+                Label1.Text = " Route Exists!Enter another ";
+                txtDepart.Text = "";
+                txtDest.Text = "";
+                txtFare.Text = "";
+                conn.Close();
+            }
+            else
+            {
                 string strInsert;
                 SqlCommand cmdInsert;
                 SqlConnection conCust;
@@ -58,7 +68,7 @@ namespace Assignment1.Web
                 strInsert = "Insert Into route (RouteID,RouteDepart,RouteDestination,BusFare,RouteName) Values (@RouteID,@RouteDepart, @RouteDestination, @BusFare,@RouteName )";
 
                 cmdInsert = new SqlCommand(strInsert, conCust);
-                cmdInsert.Parameters.AddWithValue("@RouteID",Label2.Text);
+                cmdInsert.Parameters.AddWithValue("@RouteID", Label2.Text);
                 cmdInsert.Parameters.AddWithValue("@RouteDepart", txtDepart.Text);
                 cmdInsert.Parameters.AddWithValue("@RouteDestination", txtDest.Text);
                 cmdInsert.Parameters.AddWithValue("@BusFare", txtFare.Text);
@@ -67,11 +77,19 @@ namespace Assignment1.Web
                 cmdInsert.ExecuteNonQuery();
                 conCust.Close();
                 Response.Redirect("addroute.aspx");
-         
+
             }
 
-       
-     
+            System.Threading.Thread.Sleep(3000);
+        }
+
+        protected void btnReset_Click(object sender, EventArgs e)
+        {
+            txtDepart.Text = "";
+            txtDest.Text = "";
+            txtFare.Text = "";
+        }
+        //Allow Admin clear the text box
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -82,6 +100,6 @@ namespace Assignment1.Web
 
         }
 
-    
+
     }
 }
