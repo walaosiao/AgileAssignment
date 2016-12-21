@@ -36,7 +36,14 @@ namespace Assignment1.Web
                 
 
             }
-            
+            else
+            {
+                lblmsg.Text = "No record for this Bus.";
+                txtDepart.Text = "";
+                txtDest.Text = "";
+                txtFare.Text = "";
+
+            }
 
             con.Close();
         }
@@ -63,8 +70,43 @@ namespace Assignment1.Web
             cmdUpdate.Parameters.AddWithValue("@BusFare", txtFare.Text);
              cmdUpdate.ExecuteNonQuery();
 
+             lblmsg.Text = "Route details is updated";
+             txtDepart.Text = "";
+             txtDest.Text = "";
+             txtFare.Text = "";
             conCust.Close();
         }
+
+        protected void btnDelete_Click(object sender, EventArgs e)
+        {
+            SqlConnection conCust;
+            string strDelete;
+            SqlCommand cmdDelete;
+
+            /*open connection to database*/
+            string connStr = ConfigurationManager.ConnectionStrings["BusTicketingConnectionString"].ConnectionString;
+            conCust = new SqlConnection(connStr);
+
+            conCust.Open();
+
+            strDelete = "Delete route where RouteID=@RouteID";
+            cmdDelete = new SqlCommand(strDelete, conCust);
+
+            cmdDelete.Parameters.AddWithValue("@RouteID", (txtID.Text));
+            cmdDelete.ExecuteNonQuery();
+            txtDepart.Text = "";
+            txtDest.Text = "";
+            txtFare.Text = "";
+
+            conCust.Close();
+
+
+            lblmsg.Text = "Record for this route is deleted";
+
+            conCust.Close();
+        }
+
+
 
         
 
