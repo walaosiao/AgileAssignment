@@ -10,8 +10,16 @@ namespace UnitTestProject
         public void TestMethod1()
         {
             TestCalculate test1 = new TestCalculate();
-            test1.add(3, 5);
-            Assert.AreEqual(test1,8);
+            int result = test1.add(3, 5);
+            Assert.AreEqual(8, result);
+        }
+
+        [TestMethod]
+        public void TestMethod2()
+        {
+            TestCalculate test2 = new TestCalculate();
+            int result = test2.mul(3, 5);
+            Assert.AreEqual(15, result);
         }
     }
 }

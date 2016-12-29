@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace UnitTestProject
 {
-    class TestCalculate
+    public class TestCalculate
     {
-        public void add(int a, int b)
+        public int add(int a, int b)
         {
-            int ans;
-            ans = a + b;
+            int ans = a + b;
+            return ans;
+        }
+
+        public int mul(int a, int b)
+        {
+            int result = a * b;
+            return result;
         }
     }
 }
