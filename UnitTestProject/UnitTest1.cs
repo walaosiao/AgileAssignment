@@ -28,7 +28,7 @@ namespace UnitTestProject
             
             Class1 testingValue = new Class1();
             Boolean msg = testingValue.isNull("Halo"); //txtIC.text
-            Assert.AreEqual(false, msg);
+            Assert.AreEqual(true, msg);
         }
     }
 }
