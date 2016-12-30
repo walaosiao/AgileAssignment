@@ -66,7 +66,7 @@ namespace WebAssignment
         }
 
 
-        //allow user clear the data
+        
         protected void Button2_Click(object sender, EventArgs e)
         {
             txtAddress.Text = "";
