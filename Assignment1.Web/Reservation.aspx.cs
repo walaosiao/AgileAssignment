@@ -1203,7 +1203,7 @@ namespace BusReservation
 
         private void generateXML()
         {
-
+            
             XmlTextWriter xWriter = new XmlTextWriter(Server.MapPath("Reservation.xml"), Encoding.UTF8);
             xWriter.WriteStartDocument();
 
