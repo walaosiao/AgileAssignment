@@ -48,6 +48,7 @@
         <asp:Label ID="lblID" runat="server" Visible="False"></asp:Label>
     
     </div>
+    //prompt user input
     <p>
         Please enter the following information :</p>
     <p>
