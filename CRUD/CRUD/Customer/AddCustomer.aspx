@@ -50,7 +50,7 @@
     </div>
     //prompt user input
     <p>
-        Please enter the following information :</p>
+        Customer is required to enter your personal details :</p>
     <p>
         <table style="width:100%;">
             <tr>
@@ -89,7 +89,7 @@
                 
             </tr>
             <tr>
-                <td class="auto-style1">Customer Status</td>
+                <td class="auto-style1">Customer Account Status</td>
                 <td>
                     <asp:DropDownList ID="ddl" runat="server">
                         <asp:ListItem>Active</asp:ListItem>
