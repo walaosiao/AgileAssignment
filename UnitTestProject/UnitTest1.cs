@@ -29,5 +29,13 @@ namespace UnitTestProject
             Boolean msg = testingValue.isNull(""); //txtIC.text
             Assert.AreEqual(true, msg);
         }
+
+        [TestMethod]
+        public void ValidAge()
+        {
+            TestCalculate tc = new TestCalculate();
+            Boolean validnot = tc.ageRange(45);
+            Assert.AreEqual(true, validnot);
+        }
     }
 }

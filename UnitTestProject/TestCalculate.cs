@@ -19,5 +19,16 @@ namespace UnitTestProject
             int result = a * b;
             return result;
         }
+
+        public Boolean ageRange(int age)
+        {
+            Boolean result = false;
+            
+            if(age > 21 && age < 50)
+            {
+                result = true;
+            }
+            return result;
+        }
     }
 }

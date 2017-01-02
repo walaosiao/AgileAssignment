@@ -157,3 +157,4 @@ C:\Users\Jian\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Assignm
 C:\Users\Jian\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Assignment1.Web.pdb
 C:\Users\Jian\Documents\GitHub\AgileAssignment\Assignment1.Web\bin\AjaxMin.dll
 C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\bin\AjaxMin.dll
+C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\bin\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
