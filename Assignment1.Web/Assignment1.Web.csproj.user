@@ -25,8 +25,7 @@
           <EnableENC>False</EnableENC>
           <AlwaysStartWebServerOnDebug>True</AlwaysStartWebServerOnDebug>
           <ProjectOutputReferences>
-            <Ref Project="{9F8F3062-6542-46EF-ADD7-D1C221CEC877}" Folder="ClientBin">
-            </Ref>
+            <Ref Project="{9F8F3062-6542-46EF-ADD7-D1C221CEC877}" Folder="ClientBin">Assignment1.xap</Ref>
           </ProjectOutputReferences>
         </WebProjectProperties>
       </FlavorProperties>

@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient; // IMPORTANT
 using System.Configuration;// IMPORTANT
+
 namespace CRUD.Customer.Staff
 {
     public partial class AddStaff : System.Web.UI.Page
@@ -42,11 +43,9 @@ namespace CRUD.Customer.Staff
         {
             string strInsert;
             SqlCommand cmdInsert;
-
             SqlConnection conCust;
             string connStr = ConfigurationManager.ConnectionStrings["BusTicketingConnectionString"].ConnectionString;
             conCust = new SqlConnection(connStr);
-
 
             strInsert = "Insert Into staff (StaffID,StaffName,StaffIC,StaffAddress,StaffPosition,StaffSalary,StaffContact,Password,StaffStatus) Values (@StaffID,@StaffName,@StaffIC,@StaffAddress,@StaffPosition,@StaffSalary,@StaffContact,@Password,@StaffStatus)";
 
@@ -54,7 +53,6 @@ namespace CRUD.Customer.Staff
             cmdInsert.Parameters.AddWithValue("@StaffID", lblID.Text);
             cmdInsert.Parameters.AddWithValue("@StaffName", txtName.Text);
             cmdInsert.Parameters.AddWithValue("@StaffIC", txtIC.Text);
-            PassingA = txtIC.Text;
             cmdInsert.Parameters.AddWithValue("@StaffAddress", txtAdd.Text);
             cmdInsert.Parameters.AddWithValue("@StaffPosition", txtPost.Text);
             cmdInsert.Parameters.AddWithValue("@StaffSalary", txtSalary.Text);
@@ -72,7 +70,6 @@ namespace CRUD.Customer.Staff
 
         protected void btnReset_Click(object sender, EventArgs e)
         {
-            
             txtName.Text = "";
             txtIC.Text = "";
             txtAdd.Text = "";
@@ -81,7 +78,6 @@ namespace CRUD.Customer.Staff
             txtCont.Text = "";
             txtCpass.Text = "";
             ddl.Text = "";
-           
         }
 
         protected void ddl_SelectedIndexChanged(object sender, EventArgs e)

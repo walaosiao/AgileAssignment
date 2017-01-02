@@ -117,8 +117,6 @@ C:\Users\User\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Assignm
 C:\Users\User\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Assignment1.Web.pdb
 C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\bin\Assignment1.Web.dll
 C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\bin\Assignment1.Web.pdb
-C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\bin\WebAssignment.dll
-C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\bin\WebAssignment.pdb
 C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Assignment1.Web.csprojResolveAssemblyReference.cache
 C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Assignment1.Web.dll
 C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Assignment1.Web.pdb

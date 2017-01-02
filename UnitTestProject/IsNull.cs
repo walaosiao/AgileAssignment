@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UnitTestProject
 {
-    class Class1
+    class IsNull
     {
         public Boolean isNull(object value)
         {
