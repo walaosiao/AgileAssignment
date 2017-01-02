@@ -10,6 +10,7 @@ namespace CRUD.Customer.Staff
 {
     public partial class AddStaff : System.Web.UI.Page
     {
+        public static object PassingA;
         protected void Page_Load(object sender, EventArgs e)
         {
             lblID.Text = generateID();
@@ -53,6 +54,7 @@ namespace CRUD.Customer.Staff
             cmdInsert.Parameters.AddWithValue("@StaffID", lblID.Text);
             cmdInsert.Parameters.AddWithValue("@StaffName", txtName.Text);
             cmdInsert.Parameters.AddWithValue("@StaffIC", txtIC.Text);
+            PassingA = txtIC.Text;
             cmdInsert.Parameters.AddWithValue("@StaffAddress", txtAdd.Text);
             cmdInsert.Parameters.AddWithValue("@StaffPosition", txtPost.Text);
             cmdInsert.Parameters.AddWithValue("@StaffSalary", txtSalary.Text);

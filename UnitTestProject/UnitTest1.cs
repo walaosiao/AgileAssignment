@@ -21,5 +21,14 @@ namespace UnitTestProject
             int result = test2.mul(3, 5);
             Assert.AreEqual(15, result);
         }
+
+        [TestMethod]
+        public void NullOrNot()
+        {
+            
+            Class1 testingValue = new Class1();
+            Boolean msg = testingValue.isNull(""); //txtIC.text
+            Assert.AreEqual(true, msg);
+        }
     }
 }
