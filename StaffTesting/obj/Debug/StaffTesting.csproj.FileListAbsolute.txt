@@ -1,0 +1,6 @@
+C:\Users\Chun\Documents\GitHub\AgileAssignment\StaffTesting\bin\Debug\StaffTesting.dll
+C:\Users\Chun\Documents\GitHub\AgileAssignment\StaffTesting\bin\Debug\StaffTesting.pdb
+C:\Users\Chun\Documents\GitHub\AgileAssignment\StaffTesting\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Chun\Documents\GitHub\AgileAssignment\StaffTesting\obj\Debug\StaffTesting.csprojResolveAssemblyReference.cache
+C:\Users\Chun\Documents\GitHub\AgileAssignment\StaffTesting\obj\Debug\StaffTesting.dll
+C:\Users\Chun\Documents\GitHub\AgileAssignment\StaffTesting\obj\Debug\StaffTesting.pdb

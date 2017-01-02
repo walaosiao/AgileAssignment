@@ -37,5 +37,13 @@ namespace UnitTestProject
             Boolean validnot = tc.ageRange(45);
             Assert.AreEqual(true, validnot);
         }
+
+        [TestMethod]
+        public void ValidBusID()
+        {
+            TestBusDriverID newBusID = new TestBusDriverID();
+            Boolean yesno = newBusID.ValidBusDriverID("BD101");
+            Assert.AreEqual(true, yesno);
+        }
     }
 }

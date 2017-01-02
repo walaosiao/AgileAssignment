@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -50,16 +51,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="IsNull.cs" />
+    <Compile Include="TestIsNull.cs" />
     <Compile Include="TestCalculate.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Assignment1.Web\Assignment1.Web.csproj">
-      <Project>{958d2974-045b-46e8-b610-adc96d4c778a}</Project>
-      <Name>Assignment1.Web</Name>
-    </ProjectReference>
+    <Compile Include="TestBusDriverID.cs" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
