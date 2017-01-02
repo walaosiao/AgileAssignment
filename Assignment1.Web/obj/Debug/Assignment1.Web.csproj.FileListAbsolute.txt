@@ -149,3 +149,12 @@ C:\Users\TCYEE-PC\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Fak
 C:\Users\TCYEE-PC\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Assignment1.Web.csprojResolveAssemblyReference.cache
 C:\Users\TCYEE-PC\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Assignment1.Web.dll
 C:\Users\TCYEE-PC\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Assignment1.Web.pdb
+C:\Users\Jian\Documents\GitHub\AgileAssignment\Assignment1.Web\bin\Assignment1.Web.dll.config
+C:\Users\Jian\Documents\GitHub\AgileAssignment\Assignment1.Web\bin\Assignment1.Web.dll
+C:\Users\Jian\Documents\GitHub\AgileAssignment\Assignment1.Web\bin\Assignment1.Web.pdb
+C:\Users\Jian\Documents\GitHub\AgileAssignment\Assignment1.Web\bin\WebAssignment.dll
+C:\Users\Jian\Documents\GitHub\AgileAssignment\Assignment1.Web\bin\WebAssignment.pdb
+C:\Users\Jian\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Assignment1.Web.csprojResolveAssemblyReference.cache
+C:\Users\Jian\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Assignment1.Web.dll
+C:\Users\Jian\Documents\GitHub\AgileAssignment\Assignment1.Web\obj\Debug\Assignment1.Web.pdb
+C:\Users\Jian\Documents\GitHub\AgileAssignment\Assignment1.Web\bin\AjaxMin.dll

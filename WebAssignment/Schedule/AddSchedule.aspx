@@ -63,13 +63,13 @@
         <asp:Label ID="Label4" runat="server" Text="Bus ID : "></asp:Label>
         &nbsp;<asp:DropDownList ID="ddlBusID" runat="server" DataSourceID="BusDataSource" DataTextField="busID" DataValueField="busID" OnSelectedIndexChanged="ddlBusID_SelectedIndexChanged">
         </asp:DropDownList>
-        <asp:SqlDataSource ID="BusDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:BusTicketingConnectionString %>" SelectCommand="SELECT * FROM [Bus]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="BusDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:BusTicketingConnectionString2 %>" SelectCommand="SELECT * FROM [Bus]"></asp:SqlDataSource>
         <br />
         <br />
         <asp:Label ID="Label6" runat="server" Text="Driver ID : "></asp:Label>
         <asp:DropDownList ID="ddlDriverID" runat="server" DataSourceID="DriverDataSource1" DataTextField="driverID" DataValueField="driverID">
         </asp:DropDownList>
-        <asp:SqlDataSource ID="DriverDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:BusTicketingConnectionString %>" SelectCommand="SELECT * FROM [Driver]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="DriverDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:BusTicketingConnectionString2 %>" SelectCommand="SELECT * FROM [Driver]"></asp:SqlDataSource>
         <br />
         <asp:Button ID="txtSubmit" runat="server" OnClick="txtSubmit_Click" Text="Submit" />
 &nbsp;&nbsp;&nbsp;
