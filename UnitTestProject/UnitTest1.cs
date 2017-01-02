@@ -25,7 +25,7 @@ namespace UnitTestProject
         [TestMethod]
         public void NullOrNot()
         {
-            IsNull testingValue = new IsNull();
+            TestIsNull testingValue = new TestIsNull();
             Boolean msg = testingValue.isNull(""); //txtIC.text
             Assert.AreEqual(true, msg);
         }
