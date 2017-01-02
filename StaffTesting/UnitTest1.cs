@@ -11,7 +11,7 @@ namespace StaffTesting
         {
             AddStaffInfoTest LTO = new AddStaffInfoTest();
 
-            string StaffContactNo = "0174511231";
+            string StaffContactNo = "0163901234";
 
             bool result = LTO.StaffContactIsDuplicated(StaffContactNo);
 
