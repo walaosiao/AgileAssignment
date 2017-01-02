@@ -50,7 +50,8 @@ namespace WebAssignment
              lblAdd.Text = "New customer added!";
 
              conBook.Close();*/
-
+            
+            //allow user add the new record
             DriverFunction.DriverSoapClient client = new DriverFunction.DriverSoapClient();
               int row = client.InsertLatestCustomers(txtID.Text, txtName.Text, txtAge.Text, rbGender.SelectedItem.ToString(), ddlRace.SelectedItem.ToString(), txtLicence.Text, txtAddress.Text);
               if (row > 0)
@@ -65,7 +66,7 @@ namespace WebAssignment
         }
 
 
-
+        
         protected void Button2_Click(object sender, EventArgs e)
         {
             txtAddress.Text = "";

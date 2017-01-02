@@ -29,7 +29,7 @@
         <asp:Button ID="btncCheck" runat="server" OnClick="btncCheck_Click" Text="Check" style="height: 26px" />
         <br />
         <br />
-        Please enter the following information :</div>
+        Please enter customer information :</div>
         <table style="width:100%;">
             <tr>
                 <td class="auto-style1">Customer Name :</td>

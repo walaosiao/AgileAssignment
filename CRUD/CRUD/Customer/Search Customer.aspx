@@ -22,7 +22,7 @@
     <form id="form1" runat="server">
     <div>
     
-        Search Customer<br />
+        Search For Customer Record<br />
         <br />
         Customer ID:<asp:TextBox ID="txtID" runat="server"></asp:TextBox>
     
