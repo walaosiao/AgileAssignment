@@ -9,13 +9,21 @@ namespace StaffTesting
         [TestMethod]
         public void StaffContactShouldNotDuplicated()
         {
-            AddStaffInfoTest LTO = new AddStaffInfoTest();
+            try
+            {
+                AddStaffInfoTest LTO = new AddStaffInfoTest();
 
-            string StaffContactNo = "0163901234";
+                string StaffContactNo = "0163901234";
 
-            bool result = LTO.StaffContactIsDuplicated(StaffContactNo);
+                bool result = LTO.StaffContactIsDuplicated(StaffContactNo);
 
-            Assert.AreEqual(true, result);
+                Assert.AreEqual(true, result);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("{0} Exception caught.", e);
+            }
+            
         }
 
         [TestMethod]
