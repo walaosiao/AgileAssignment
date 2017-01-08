@@ -959,6 +959,9 @@ namespace BusReservation
                 minusseatqty();
             }
         }
+
+
+
         private void addfare()
         {
             if (txtseatqty.Text == "0")
