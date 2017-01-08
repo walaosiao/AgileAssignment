@@ -959,9 +959,8 @@ namespace BusReservation
                 minusseatqty();
             }
         }
-
-
-        private void addfare() {
+        private void addfare()
+        {
             if (txtseatqty.Text == "0")
             {
                 lbltotalfare.Text = "35.00";
@@ -969,19 +968,21 @@ namespace BusReservation
             else
             {
                 double tmp1 = double.Parse(txtseatqty.Text);
-                
-               double tmp2 = tmp1 * 35.00;
+
+                double tmp2 = tmp1 * 35.00;
                 lbltotalfare.Text = tmp2.ToString("n2");
             }
         }
 
-        private void minusfare() {
+        private void minusfare()
+        {
             double tmp1 = double.Parse(lbltotalfare.Text);
             tmp1 = tmp1 - 35.00;
             lbltotalfare.Text = tmp1.ToString("n2");
         }
 
-        private void addseatqty() {
+        private void addseatqty()
+        {
             if (txtseatqty.Text == "0")
             {
                 txtseatqty.Text = "1";
@@ -995,7 +996,8 @@ namespace BusReservation
         }
 
 
-        private void minusseatqty() {
+        private void minusseatqty()
+        {
             int tmp = int.Parse(txtseatqty.Text);
             tmp = tmp - 1;
             txtseatqty.Text = tmp.ToString();
