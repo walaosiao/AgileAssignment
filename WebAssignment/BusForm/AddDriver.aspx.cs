@@ -69,6 +69,7 @@ namespace WebAssignment
         
         protected void Button2_Click(object sender, EventArgs e)
         {
+            //Empty the field
             txtAddress.Text = "";
             txtAge.Text = "";
             txtID.Text = "";
