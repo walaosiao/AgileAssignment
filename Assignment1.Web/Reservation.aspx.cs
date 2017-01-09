@@ -1316,7 +1316,6 @@ namespace BusReservation
             cmdInsert.Parameters.AddWithValue("@Name", txtName.Text);
             cmdInsert.Parameters.AddWithValue("@PhoneNo", txtPhone.Text);
             cmdInsert.Parameters.AddWithValue("@IC", txtIc.Text);
-
             conCust.Open();
             cmdInsert.ExecuteNonQuery();
 
@@ -1338,7 +1337,7 @@ namespace BusReservation
             //Response.Redirect("print.aspx");
         }
 
-        
+
 
     }
 }
