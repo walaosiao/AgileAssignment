@@ -13,22 +13,11 @@
            
             position: fixed;
         }
-        .auto-style2 {
-            width: 844px;
-        }
         .auto-style4 {
             height: 24px;
         }
         .auto-style5 {
             height: 25px;
-        }
-        .auto-style6 {
-            width: 844px;
-            height: 20px;
-        }
-        .auto-style7 {
-            width: 55%;
-            height: 301px;
         }
         .auto-style8 {
             width: 844px;
@@ -162,67 +151,68 @@
                                         <td class="auto-style7">
                                         
                                         <asp:Panel ID="pnl1" runat="server">
-                                            <asp:Table border="0" ID="seattable" runat="server">
+                                            <asp:Table ID="seattable" runat="server" border="0">
                                                 <asp:TableRow>
-                                                    <asp:TableCell ID="TableCell1" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell1" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s1" ToolTip="Window Side" ImageUrl="~/Images/available_seat_img.gif"
                                                              runat="server" OnClick="s1_Click" />1</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell2" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell2" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s6"  ImageUrl="~/Images/available_seat_img.gif"
                                                           runat="server" OnClick="s6_Click" />6</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell3" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell3" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s7"  ToolTip="Window Side" ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s7_Click" />7</asp:TableCell>
-                                                      <asp:TableCell ID="TableCell4" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell4" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s12"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s12_Click" />12</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell5" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell5" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s13"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s13_Click" />13</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell6" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell6" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s18"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s18_Click" />18</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell7" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell7" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s19"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s19_Click" />19</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell8" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell8" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s24"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s24_Click" />24</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell9" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell9" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s25"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s25_Click" />25</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell10" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell10" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s31"  ImageUrl="~/Images/available_seat_img.gif"
-                                                            runat="server" OnClick="s31_Click" />31</asp:TableCell></asp:TableRow>
+                                                            runat="server" OnClick="s31_Click" />31</asp:TableCell>
+                                                </asp:TableRow>
                                                 <asp:TableRow>
-                                                    <asp:TableCell ID="TableCell11" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell11" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s2" ImageUrl="~/Images/available_seat_img.gif" 
                                                             runat="server" OnClick="s2_Click" />2</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell12" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell12" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s5"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s5_Click" />5</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell13" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell13" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s8"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s8_Click" />8</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell14" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell14" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s11"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s11_Click" />11</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell15" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell15" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s14"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s14_Click" />14</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell16" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell16" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s17"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s17_Click" />17</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell17" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell17" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s20"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s20_Click" />20</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell18" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell18" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s23"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s23_Click" />23</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell19" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell19" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s26"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s26_Click" />26</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell20" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell20" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s30"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s30_Click" />30</asp:TableCell>
                                                 </asp:TableRow>
@@ -236,39 +226,39 @@
                                                     <asp:TableCell ID="TableCell27" runat="server">&nbsp; </asp:TableCell>
                                                     <asp:TableCell ID="TableCell28" runat="server">&nbsp; </asp:TableCell>
                                                     <asp:TableCell ID="TableCell29" runat="server">&nbsp; </asp:TableCell>
-                                                    <asp:TableCell ID="TableCell30" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell30" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s29"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s29_Click" />29</asp:TableCell>
                                                 </asp:TableRow>
                                                 <asp:TableRow>
-                                                    <asp:TableCell ID="TableCell31" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell31" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s3"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s3_Click" />3</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell32" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell32" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s4"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s4_Click" />4</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell33" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell33" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s9"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s9_Click" />9</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell34" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell34" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s10"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s10_Click" />10</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell35" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell35" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s15"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s15_Click" />15</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell36" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell36" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s16"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s16_Click" />16</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell37" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell37" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s21"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s21_Click" />21</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell38" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell38" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s22"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s22_Click" />22</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell39" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell39" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s27"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s27_Click" />27</asp:TableCell>
-                                                    <asp:TableCell ID="TableCell40" class="seatCell" valign="middle" runat="server">
+                                                    <asp:TableCell ID="TableCell40" runat="server" class="seatCell" valign="middle">
                                                         <asp:ImageButton ID="s28"  ImageUrl="~/Images/available_seat_img.gif"
                                                             runat="server" OnClick="s28_Click" />28</asp:TableCell>
                                                 </asp:TableRow>
