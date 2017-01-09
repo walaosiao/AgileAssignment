@@ -78,19 +78,11 @@
                                                                 <ContentTemplate>
                                                                     <div id="txtHint">
                                                                         <asp:DropDownList CssClass="form" ID="Destination" runat="server" Height="30px" Width="150px" AutoPostBack="True" AppendDataBoundItems="true" Enabled="False" OnSelectedIndexChanged="Destination_SelectedIndexChanged">
-                                                                           
-
-
-
+                               
                                                                             <asp:ListItem Value="-1">
                                                                            --Select--
                                                                         </asp:ListItem>
-                                                                            
-                                                                            
-                                                                            
-                                                                             
-                                                                            
-                                                                            
+                                   
                                                                         </asp:DropDownList>
                                                                     </div>
                                                                 </ContentTemplate>
