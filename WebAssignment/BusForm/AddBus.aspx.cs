@@ -20,6 +20,7 @@ namespace WebAssignment
             int row = client.InsertLatestCustomers(txtID.Text, txtPlatenum.Text,txtModel.Text, ddlbusdriver.SelectedItem.ToString());
             if (row > 0)
             {
+                //add new record of the driver
                 Response.Write("<script>alert('Record insert successfuly');</script>");
                 txtID.Text = txtPlatenum.Text = txtModel.Text = ddlbusdriver.Text;
             }
