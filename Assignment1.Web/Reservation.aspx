@@ -364,7 +364,10 @@
                                                                         </td>
                                                                     </tr>
                                                                <tr><td>
+
                                                                    <asp:ImageButton ID="Button1" runat="server" ImageUrl="~/Images/payment.png" OnClientClick="window.open('Assignment1TestPage.aspx','','left=100,top=50,width=1100,height=580,scrollbars=1')" OnClick="Button1_Click" />
+
+
                                                                    </td>
                                                                    <td>
                                                                        <asp:ImageButton ID="btnSave" runat="server" ImageUrl="~/Images/reservation.png" OnClientClick="window.open('print.aspx','','left=100,top=50,width=1100,height=580,scrollbars=1')" OnClick="btnSave_Click1" />
