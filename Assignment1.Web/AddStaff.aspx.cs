@@ -39,6 +39,7 @@ namespace CRUD.Customer.Staff
             }
         }
 
+        // Accept user input and insert into database
         protected void btnAdd_Click(object sender, EventArgs e)
         {
             string strInsert;
