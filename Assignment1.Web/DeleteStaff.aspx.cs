@@ -16,6 +16,7 @@ namespace CRUD.Customer.Staff
 
         }
 
+        // retrieve staff record from database
         protected void btnDelete_Click(object sender, EventArgs e)
         {
             SqlConnection conCust;
