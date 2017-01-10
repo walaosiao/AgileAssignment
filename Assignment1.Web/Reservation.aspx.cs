@@ -962,6 +962,32 @@ namespace BusReservation
 
 
 
+
+        protected void ibnext_Click(object sender, ImageClickEventArgs e)
+        {
+            seattable.Visible = false;
+            pnl2.Visible = true;
+            ibnext.Visible = false;
+            txtTotalSeat.Text = txtseatqty.Text;
+            txtTotalRent.Text  = lbltotalfare.Text;
+            lblPerSeat.Text = "35";
+            txtBus.Text = "PDW1234";
+            txtseat.Text = txtseatnumber.Text.Remove(txtseatnumber.Text.Length - 1);
+            txtTotalRent.Text=lbltotalfare.Text;
+            txtNumber.Text = generateID();
+
+        }
+
+        protected void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void txtname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void addfare()
         {
             if (txtseatqty.Text == "0")
@@ -1006,32 +1032,6 @@ namespace BusReservation
             txtseatqty.Text = tmp.ToString();
         }
 
-        protected void ibnext_Click(object sender, ImageClickEventArgs e)
-        {
-            seattable.Visible = false;
-            pnl2.Visible = true;
-            ibnext.Visible = false;
-            txtTotalSeat.Text = txtseatqty.Text;
-            txtTotalRent.Text  = lbltotalfare.Text;
-            lblPerSeat.Text = "35";
-            txtBus.Text = "PDW1234";
-            txtseat.Text = txtseatnumber.Text.Remove(txtseatnumber.Text.Length - 1);
-            txtTotalRent.Text=lbltotalfare.Text;
-            txtNumber.Text = generateID();
-
-        }
-
-        protected void TextBox2_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        protected void txtname_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-       
 
         protected void Destination_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -1316,7 +1316,6 @@ namespace BusReservation
             cmdInsert.Parameters.AddWithValue("@Name", txtName.Text);
             cmdInsert.Parameters.AddWithValue("@PhoneNo", txtPhone.Text);
             cmdInsert.Parameters.AddWithValue("@IC", txtIc.Text);
-
             conCust.Open();
             cmdInsert.ExecuteNonQuery();
 
@@ -1338,7 +1337,7 @@ namespace BusReservation
             //Response.Redirect("print.aspx");
         }
 
-        
+
 
     }
 }
