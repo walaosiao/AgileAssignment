@@ -3,3 +3,9 @@ C:\Users\Chyi\Desktop\CRUD\CRUD\bin\CRUD.pdb
 C:\Users\Chyi\Desktop\CRUD\CRUD\obj\Debug\CRUD.csprojResolveAssemblyReference.cache
 C:\Users\Chyi\Desktop\CRUD\CRUD\obj\Debug\CRUD.dll
 C:\Users\Chyi\Desktop\CRUD\CRUD\obj\Debug\CRUD.pdb
+C:\Users\Jian\Documents\GitHub\AgileAssignment\CRUD\CRUD\bin\CRUD.dll.config
+C:\Users\Jian\Documents\GitHub\AgileAssignment\CRUD\CRUD\bin\CRUD.dll
+C:\Users\Jian\Documents\GitHub\AgileAssignment\CRUD\CRUD\bin\CRUD.pdb
+C:\Users\Jian\Documents\GitHub\AgileAssignment\CRUD\CRUD\obj\Debug\CRUD.csprojResolveAssemblyReference.cache
+C:\Users\Jian\Documents\GitHub\AgileAssignment\CRUD\CRUD\obj\Debug\CRUD.dll
+C:\Users\Jian\Documents\GitHub\AgileAssignment\CRUD\CRUD\obj\Debug\CRUD.pdb

@@ -48,6 +48,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\AjaxControlToolkit.dll</HintPath>
     </Reference>
+    <Reference Include="AjaxMin, Version=5.14.5506.26196, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxMin.5.14.5506.26202\lib\net40\AjaxMin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -80,12 +84,14 @@
     </Content>
     <Content Include="Assignment1TestPage.aspx" />
     <Content Include="Assignment1TestPage.html" />
+    <Content Include="ClientBin\Assignment1.xap" />
     <Content Include="DeleteCustomer.aspx" />
     <Content Include="DeleteStaff.aspx" />
     <Content Include="Edit.aspx" />
     <Content Include="EditCustomer.aspx" />
     <Content Include="EditStaff.aspx" />
     <Content Include="Maintenance.aspx" />
+    <Content Include="MakePayment.aspx" />
     <Content Include="PaymentReceipt.aspx" />
     <Content Include="print.aspx" />
     <Content Include="Reservation.aspx" />
@@ -175,6 +181,13 @@
     <Compile Include="Maintenance.aspx.designer.cs">
       <DependentUpon>Maintenance.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MakePayment.aspx.cs">
+      <DependentUpon>MakePayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MakePayment.aspx.designer.cs">
+      <DependentUpon>MakePayment.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PaymentReceipt.aspx.cs">
       <DependentUpon>PaymentReceipt.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -251,6 +264,8 @@
       <LastGenOutput>DataClasses2.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="packages.config" />
+    <Content Include="app.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -258,12 +273,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="Web.sitemap" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\WebAssignment\WebAssignment.csproj">
-      <Project>{81940321-9223-4796-83ce-be63cdff744d}</Project>
-      <Name>WebAssignment</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
@@ -276,9 +285,7 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ClientBin\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -304,6 +311,11 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' == ''" />
+  <PropertyGroup>
+    <SsdtUnitTestVersion>2.0</SsdtUnitTestVersion>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

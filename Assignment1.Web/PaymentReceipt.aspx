@@ -30,7 +30,7 @@
                     <asp:Image ID="Image1" runat="server" Height="60px" ImageUrl="~/Images/logobar.jpg" Width="278px" />
                 </td>
                 <td align="left" colspan="3" style="color: Blue; border-bottom: 2px solid gray; padding-bottom: 5px">Comfort4u Bus Service<br />
-                    Phone :- 03-8888888<br />
+                    Phone :- 03-8753759<br />
                     Bus Number:<asp:Label ID="Label10" runat="server" Text="Label"></asp:Label>
                     <br />
                     Date:<asp:Label ID="Label11" runat="server" Text="Label"></asp:Label>
@@ -105,10 +105,8 @@
                 <td>&nbsp;</td>
                 <td>
                     &nbsp;</td>
-                
             </tr>
         </table>
-  
     </div>
     </form>
 </body>

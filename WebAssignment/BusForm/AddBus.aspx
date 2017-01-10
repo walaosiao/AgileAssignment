@@ -21,7 +21,7 @@
         <br />
         <br />
         <asp:Label ID="Label5" runat="server" Text="Bus Driver : "></asp:Label>
-        <asp:DropDownList ID="ddlbusdriver" runat="server" DataSourceID="BusDataSource1" DataTextField="driverID" DataValueField="driverID">
+        <asp:DropDownList ID="ddlbusdriver" runat="server" DataSourceID="BusDataSource1" DataTextField="busDriver" DataValueField="busID">
         </asp:DropDownList>
         <br />
         <br />
@@ -31,7 +31,7 @@
         <asp:Button ID="btnReset" runat="server" Text="Reset" />
         <br />
         <br />
-        <asp:SqlDataSource ID="BusDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:BusTicketingConnectionString %>" SelectCommand="SELECT * FROM [Driver]"></asp:SqlDataSource>
+       <asp:SqlDataSource ID="BusDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:BusTicketingConnectionString2 %>" SelectCommand="SELECT * FROM [Bus]"></asp:SqlDataSource>
         <br />
         <br />
         <br />

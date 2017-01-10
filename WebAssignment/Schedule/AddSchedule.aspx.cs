@@ -18,6 +18,7 @@ namespace WebAssignment
         {
             string busstatus = "On Going";
            
+            //allow user add the new schedule
 
             ScheduleReference.ScheduleSoapClient client = new ScheduleReference.ScheduleSoapClient();
             int row = client.InsertLatestSchedule(txtID.Text, ddlFrom.SelectedItem.ToString(), ddlDestination.SelectedItem.ToString(), txtDate.Text, ddlTime.SelectedItem.ToString(), ddlBusID.SelectedItem.ToString(), ddlDriverID.SelectedItem.ToString(), busstatus);

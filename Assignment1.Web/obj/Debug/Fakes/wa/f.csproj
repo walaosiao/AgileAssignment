@@ -8,7 +8,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
-    <ProjectGuid>5f21bce5-7dd1-4c0f-938c-9a2154b7680f</ProjectGuid>
+    <ProjectGuid>8ab7bdbe-ff30-4cb7-958b-5b6be6420e19</ProjectGuid>
     <!-- update GUID here -->
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -51,7 +51,7 @@
       <Aliases>mqttf</Aliases>
     </Reference>
     <Reference Include="WebAssignment">
-      <HintPath>C:\Users\VinCenT Tan\Documents\Visual Studio 2012\Projects\Assignment1\WebAssignment\bin\WebAssignment.dll</HintPath>
+      <HintPath>C:\Users\TCYEE-PC\Documents\GitHub\AgileAssignment\WebAssignment\bin\WebAssignment.dll</HintPath>
       <Aliases>wa</Aliases>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>

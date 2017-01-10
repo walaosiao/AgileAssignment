@@ -961,45 +961,7 @@ namespace BusReservation
         }
 
 
-        private void addfare() {
-            if (txtseatqty.Text == "0")
-            {
-                lbltotalfare.Text = "35.00";
-            }
-            else
-            {
-                double tmp1 = double.Parse(txtseatqty.Text);
-                
-               double tmp2 = tmp1 * 35.00;
-                lbltotalfare.Text = tmp2.ToString("n2");
-            }
-        }
 
-        private void minusfare() {
-            double tmp1 = double.Parse(lbltotalfare.Text);
-            tmp1 = tmp1 - 35.00;
-            lbltotalfare.Text = tmp1.ToString("n2");
-        }
-
-        private void addseatqty() {
-            if (txtseatqty.Text == "0")
-            {
-                txtseatqty.Text = "1";
-            }
-            else
-            {
-                int tmp = int.Parse(txtseatqty.Text);
-                tmp = tmp + 1;
-                txtseatqty.Text = tmp.ToString();
-            }
-        }
-
-
-        private void minusseatqty() {
-            int tmp = int.Parse(txtseatqty.Text);
-            tmp = tmp - 1;
-            txtseatqty.Text = tmp.ToString();
-        }
 
         protected void ibnext_Click(object sender, ImageClickEventArgs e)
         {
@@ -1026,7 +988,50 @@ namespace BusReservation
 
         }
 
-       
+        private void addfare()
+        {
+            if (txtseatqty.Text == "0")
+            {
+                lbltotalfare.Text = "35.00";
+            }
+            else
+            {
+                double tmp1 = double.Parse(txtseatqty.Text);
+
+                double tmp2 = tmp1 * 35.00;
+                lbltotalfare.Text = tmp2.ToString("n2");
+            }
+        }
+
+        private void minusfare()
+        {
+            double tmp1 = double.Parse(lbltotalfare.Text);
+            tmp1 = tmp1 - 35.00;
+            lbltotalfare.Text = tmp1.ToString("n2");
+        }
+
+        private void addseatqty()
+        {
+            if (txtseatqty.Text == "0")
+            {
+                txtseatqty.Text = "1";
+            }
+            else
+            {
+                int tmp = int.Parse(txtseatqty.Text);
+                tmp = tmp + 1;
+                txtseatqty.Text = tmp.ToString();
+            }
+        }
+
+
+        private void minusseatqty()
+        {
+            int tmp = int.Parse(txtseatqty.Text);
+            tmp = tmp - 1;
+            txtseatqty.Text = tmp.ToString();
+        }
+
 
         protected void Destination_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -1203,7 +1208,7 @@ namespace BusReservation
 
         private void generateXML()
         {
-
+            
             XmlTextWriter xWriter = new XmlTextWriter(Server.MapPath("Reservation.xml"), Encoding.UTF8);
             xWriter.WriteStartDocument();
 
@@ -1311,7 +1316,6 @@ namespace BusReservation
             cmdInsert.Parameters.AddWithValue("@Name", txtName.Text);
             cmdInsert.Parameters.AddWithValue("@PhoneNo", txtPhone.Text);
             cmdInsert.Parameters.AddWithValue("@IC", txtIc.Text);
-
             conCust.Open();
             cmdInsert.ExecuteNonQuery();
 
@@ -1333,7 +1337,7 @@ namespace BusReservation
             //Response.Redirect("print.aspx");
         }
 
-        
+
 
     }
 }

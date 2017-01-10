@@ -21,6 +21,7 @@ namespace Assignment1.Web
             {
                 conn.ConnectionString = ConfigurationManager
                         .ConnectionStrings["BusTicketingConnectionString"].ConnectionString;
+
                 using (SqlCommand cmd = new SqlCommand())
                 {
                     cmd.CommandText = "select * from route where RouteName like '%'+@SearchText+'%'";
@@ -77,4 +78,8 @@ namespace Assignment1.Web
 
         }
     }
-}
+       
+        }
+
+       
+    

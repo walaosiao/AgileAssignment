@@ -12,11 +12,11 @@ namespace Assignment1.Web
     public partial class Edit : System.Web.UI.Page
     {
 
-
         string connStr = ConfigurationManager.ConnectionStrings["BusTicketingConnectionString"].ConnectionString;
         SqlCommand com;
         string str;
 
+        // Allow admin search the route record
         protected void btnCheck_Click(object sender, EventArgs e)
         {
             /*open connection to database*/
@@ -49,6 +49,7 @@ namespace Assignment1.Web
             con.Close();
         }
 
+        // Allow admin update the route detail
         protected void btnEdit_Click(object sender, EventArgs e)
         {
             SqlConnection conCust;
@@ -92,7 +93,7 @@ namespace Assignment1.Web
             strDelete = "Delete route where RouteID=@RouteID";
             cmdDelete = new SqlCommand(strDelete, conCust);
 
-            cmdDelete.Parameters.AddWithValue("@RouteID",(txtID.Text));
+            cmdDelete.Parameters.AddWithValue("@RouteID", (txtID.Text));
             cmdDelete.ExecuteNonQuery();
             txtDepart.Text = "";
             txtDest.Text = "";
@@ -100,11 +101,15 @@ namespace Assignment1.Web
 
             conCust.Close();
 
-           
-                lblmsg.Text = "Record for this route is deleted";
-   
+
+            lblmsg.Text = "Record for this route is deleted";
+
             conCust.Close();
         }
+
+
+
+        
 
         protected void txtFare_TextChanged(object sender, EventArgs e)
         {

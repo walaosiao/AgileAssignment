@@ -33,10 +33,10 @@
         <table border="0" cellpadding="2" cellspacing="0" style="border:2px solid gray;padding:5px">
             <tr>
                 <td align="Center" colspan="3" style="border-bottom: 2px solid gray; padding-bottom:5px ">
-                    <asp:Image ID="Image1" runat="server" Height="60px" ImageUrl="~/Images/logobar.jpg" Width="278px" />
+                <asp:Image ID="Image1" runat="server" Height="60px" ImageUrl="~/Images/logobar.jpg" Width="278px" />
                 </td>
                 <td align="left" colspan="3" style="color: Blue; border-bottom: 2px solid gray; padding-bottom: 5px">Comfort4u Bus Service<br />
-                    Phone :- 03-8888888<br />
+                Phone :- 03-8888888<br />
                 </td>
             </tr>
             <tr>

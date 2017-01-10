@@ -18,6 +18,7 @@ namespace WebAssignment
             ReportReference.Report1SoapClient client = new ReportReference.Report1SoapClient();
              if (RadioButtonList1.SelectedIndex == 0)
              {
+
                  Label3.Visible = true;
                  GridView1.DataSource = client.GetLatestCustomers(DropDownList1.SelectedItem.ToString());
                  GridView1.DataBind();
@@ -27,8 +28,11 @@ namespace WebAssignment
                  Button2.Visible = true;
                  Label6.Visible = false;
                  Label7.Visible = false;
+
              }
+
              else if (RadioButtonList1.SelectedIndex == 1)
+
              {
 
                  GridView1.DataSource = client.GetLatestDriver(DropDownList2.SelectedItem.ToString());

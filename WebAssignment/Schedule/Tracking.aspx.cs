@@ -28,8 +28,10 @@ namespace WebAssignment
 
             if (txtTrackID.Text == "")
             {
+
                 Response.Write("<script>alert('No ID is inserted , Please try again.');</script>");
                 txtTrackID.Focus();
+           
             }
 
             else {

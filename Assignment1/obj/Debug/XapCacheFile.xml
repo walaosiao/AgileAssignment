@@ -1,12 +1,12 @@
-﻿<xapCache source="C:\Users\VinCenT Tan\Documents\Visual Studio 2012\Projects\Assignment1\Assignment1\Bin\Debug\Assignment1.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="6/8/2014 7:32:50 AM">
-  <file source="C:\Users\VinCenT Tan\Documents\Visual Studio 2012\Projects\Assignment1\Assignment1\obj\Debug\Assignment1.dll" archivePath="Assignment1.dll" lastWriteTime="6/8/2014 7:32:49 AM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.ComponentModel.DataAnnotations.dll" archivePath="System.ComponentModel.DataAnnotations.dll" lastWriteTime="18/11/2011 5:40:20 PM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Data.dll" archivePath="System.Windows.Controls.Data.dll" lastWriteTime="18/11/2011 5:40:20 PM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Data.Input.dll" archivePath="System.Windows.Controls.Data.Input.dll" lastWriteTime="18/11/2011 5:40:20 PM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.dll" archivePath="System.Windows.Controls.dll" lastWriteTime="18/11/2011 5:40:20 PM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Input.dll" archivePath="System.Windows.Controls.Input.dll" lastWriteTime="18/11/2011 5:40:20 PM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Navigation.dll" archivePath="System.Windows.Controls.Navigation.dll" lastWriteTime="18/11/2011 5:40:20 PM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Data.dll" archivePath="System.Windows.Data.dll" lastWriteTime="18/11/2011 5:40:20 PM" />
-  <file source="C:\Users\VinCenT Tan\Documents\Visual Studio 2012\Projects\Assignment1\Assignment1\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="5/8/2014 2:36:36 AM" />
-  <file source="C:\Users\VinCenT Tan\Documents\Visual Studio 2012\Projects\Assignment1\Assignment1\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="5/8/2014 12:16:28 AM" />
+﻿<xapCache source="C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1\Bin\Debug\Assignment1.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="03-Jan-17 1:50:03 AM">
+  <file source="C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1\obj\Debug\Assignment1.dll" archivePath="Assignment1.dll" lastWriteTime="03-Jan-17 1:50:00 AM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.ComponentModel.DataAnnotations.dll" archivePath="System.ComponentModel.DataAnnotations.dll" lastWriteTime="18-Nov-11 5:40:20 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Data.dll" archivePath="System.Windows.Controls.Data.dll" lastWriteTime="18-Nov-11 5:40:20 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Data.Input.dll" archivePath="System.Windows.Controls.Data.Input.dll" lastWriteTime="18-Nov-11 5:40:20 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.dll" archivePath="System.Windows.Controls.dll" lastWriteTime="18-Nov-11 5:40:20 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Input.dll" archivePath="System.Windows.Controls.Input.dll" lastWriteTime="18-Nov-11 5:40:20 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Navigation.dll" archivePath="System.Windows.Controls.Navigation.dll" lastWriteTime="18-Nov-11 5:40:20 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Data.dll" archivePath="System.Windows.Data.dll" lastWriteTime="18-Nov-11 5:40:20 PM" />
+  <file source="C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="07-Dec-16 10:59:14 AM" />
+  <file source="C:\Users\Chun\Documents\GitHub\AgileAssignment\Assignment1\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="03-Jan-17 1:50:03 AM" />
 </xapCache>

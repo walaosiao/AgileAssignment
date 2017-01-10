@@ -6,10 +6,12 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient; // IMPORTANT
 using System.Configuration;// IMPORTANT
+
 namespace CRUD.Customer.Staff
 {
     public partial class AddStaff : System.Web.UI.Page
     {
+        public static object PassingA;
         protected void Page_Load(object sender, EventArgs e)
         {
             lblID.Text = generateID();
@@ -37,15 +39,14 @@ namespace CRUD.Customer.Staff
             }
         }
 
+        // Accept user input and insert into database
         protected void btnAdd_Click(object sender, EventArgs e)
         {
             string strInsert;
             SqlCommand cmdInsert;
-
             SqlConnection conCust;
             string connStr = ConfigurationManager.ConnectionStrings["BusTicketingConnectionString"].ConnectionString;
             conCust = new SqlConnection(connStr);
-
 
             strInsert = "Insert Into staff (StaffID,StaffName,StaffIC,StaffAddress,StaffPosition,StaffSalary,StaffContact,Password,StaffStatus) Values (@StaffID,@StaffName,@StaffIC,@StaffAddress,@StaffPosition,@StaffSalary,@StaffContact,@Password,@StaffStatus)";
 
@@ -70,7 +71,6 @@ namespace CRUD.Customer.Staff
 
         protected void btnReset_Click(object sender, EventArgs e)
         {
-            
             txtName.Text = "";
             txtIC.Text = "";
             txtAdd.Text = "";
@@ -79,7 +79,6 @@ namespace CRUD.Customer.Staff
             txtCont.Text = "";
             txtCpass.Text = "";
             ddl.Text = "";
-           
         }
 
         protected void ddl_SelectedIndexChanged(object sender, EventArgs e)
