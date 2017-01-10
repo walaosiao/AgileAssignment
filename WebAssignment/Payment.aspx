@@ -39,28 +39,27 @@
         <br />
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Credit/Debit Card" BackColor="Silver" />
         <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Online Banking" BackColor="Silver" />
-&nbsp;<asp:Panel ID="Panel1" runat="server" Height="231px" Width="249px" Visible="False">
-            <asp:RadioButtonList ID="RadioButtonList1" runat="server">
-                <asp:ListItem>Maybank2u</asp:ListItem>
-                <asp:ListItem>CIMB Clicks</asp:ListItem>
-                <asp:ListItem>RHB Online</asp:ListItem>
-                <asp:ListItem>AM Online</asp:ListItem>
-                <asp:ListItem>Hong Leong Bank Online</asp:ListItem>
-                <asp:ListItem>Paypal</asp:ListItem>
-                <asp:ListItem>MEPS FPX</asp:ListItem>
-            </asp:RadioButtonList>
+&nbsp;
+        <asp:Panel ID="Panel1" runat="server" Height="231px" Width="249px" Visible="False">
+        <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+        <asp:ListItem>Maybank2u</asp:ListItem>
+        <asp:ListItem>CIMB Clicks</asp:ListItem>
+        <asp:ListItem>RHB Online</asp:ListItem>
+        <asp:ListItem>AM Online</asp:ListItem>
+        <asp:ListItem>Hong Leong Bank Online</asp:ListItem>
+        <asp:ListItem>Paypal</asp:ListItem>
+        <asp:ListItem>MEPS FPX</asp:ListItem>
+        </asp:RadioButtonList>
         </asp:Panel>
         <asp:Panel ID="Panel2" runat="server" Height="165px" Visible="False" Width="246px">
-            <asp:RadioButtonList ID="RadioButtonList2" runat="server">
-                <asp:ListItem>Visa/Master Via Paypal</asp:ListItem>
-                <asp:ListItem>Visa/Master</asp:ListItem>
-            </asp:RadioButtonList>
+        <asp:RadioButtonList ID="RadioButtonList2" runat="server">
+        <asp:ListItem>Visa/Master Via Paypal</asp:ListItem>
+        <asp:ListItem>Visa/Master</asp:ListItem>
+        </asp:RadioButtonList>
         </asp:Panel>
         <p>
             <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Paynow" />
-        <br />
-        <br />
-    
+            <br /><br />
         </p>
     
     </div>
