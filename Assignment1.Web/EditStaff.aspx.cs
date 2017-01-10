@@ -61,7 +61,7 @@ namespace CRUD.Customer.Staff
         }
 
 
-
+        /* insert user input into database */
         protected void btnEdit_Click(object sender, EventArgs e)
         {
             SqlConnection conCust;
