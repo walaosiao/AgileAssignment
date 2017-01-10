@@ -15,6 +15,7 @@ namespace Assignment1.Web
         string connStr = ConfigurationManager.ConnectionStrings["BusTicketingConnectionString"].ConnectionString;
         SqlCommand com;
         string str;
+
         // Allow admin search the route record
         protected void btnCheck_Click(object sender, EventArgs e)
         {
